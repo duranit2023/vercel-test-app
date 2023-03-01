@@ -21,7 +21,7 @@ function roles({ roles }) {
 export default roles
 
 export async function getServerSideProps() {
-  const response = await fetch("http://localhost:3000/api/roles");
+  const response = await fetch("https://vercel-test-app-rose.vercel.app/api/roles");
   const roles = await response.json();
   return {
     props: {
