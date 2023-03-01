@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-function RolesTable(params) {
+function RolesTable({role}) {
     return (
         <>
         <div className="container mt-5 mb-5">
@@ -14,7 +14,23 @@ function RolesTable(params) {
                         <th>Role Name</th>
                         <th>Action</th>
                     </tr>
+                    {
+                       
+                            <tr key={role}>
+                            <td>
+                                {role.id}
+                            </td>
+                            <td>
+                                {role.name}
+                            </td>
+                            <td>
+                                <button className="btn btn-primary">Edit</button>
+                            </td>
+                            </tr>
 
+                    
+                       
+                    }
                 
                     </tbody>
                 </table>
@@ -25,3 +41,4 @@ function RolesTable(params) {
 }
 
 export default RolesTable;
+

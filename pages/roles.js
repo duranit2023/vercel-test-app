@@ -5,9 +5,27 @@ function roles({ roles }) {
   return (
     <>
       <Navbar />
-      <RolesTable />
+      {
+        roles.map(role =>{
+          return(
+              <RolesTable key = {role} role = {role}  />
+
+          )
+        })
+      }
+      
     </>
   )
 }
 
 export default roles
+
+export async function getServerSideProps() {
+  const response = await fetch("http://localhost:3000/api/roles");
+  const roles = await response.json();
+  return {
+    props: {
+      roles: roles
+    }
+  }
+}

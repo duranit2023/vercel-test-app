@@ -7,7 +7,7 @@ function RoleCreate(params) {
                     <div class="form-group col-5">
                         <input type="text" className="form-control" name="name"  placeholder="Role Name" />
                     </div>
-                    <button type="submit" class="btn btn-primary mt-3">Submit</button>
+                    <button type="submit" className="btn btn-primary mt-3">Submit</button>
                 </form>
             </div>
         </>
