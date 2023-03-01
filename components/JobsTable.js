@@ -2,7 +2,6 @@ function JobsTable(params) {
     return (
 
         <>
-        
         <div className="container mt-5 mb-5">
         <h1>Manage Jobs</h1>
         <div className="card-body">
