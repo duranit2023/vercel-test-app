@@ -5,7 +5,7 @@ function RolesTable(params) {
         <>
         <div className="container mt-5 mb-5">
             <h1>Manage User Roles</h1>
-            <button className="btn btn-success"><Link href={'/createRole'}>Create New Role</Link></button>
+            <Link href={'/createRole'}><button className="btn btn-success">Create New Role</button></Link>
             <div className="card-body">
                 <table class="rwd-table">
                     <tbody>

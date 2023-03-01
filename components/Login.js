@@ -16,7 +16,7 @@ function login() {
                     <form action="#" className="login-form" method="post">
                     <input type="text" placeholder="username"/>
                     <input type="password" placeholder="password"/>
-                    <button><Link href="/roles">Login</Link></button>
+                    <Link href="/roles"><button>Login</button></Link>
                     <p className="message">Not registered? <a>Create an account</a></p>
                     </form>
                 </div>
