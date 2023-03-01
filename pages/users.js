@@ -1,4 +1,4 @@
-import Navbar from "@/components/navbar"
+import Navbar from "@/components/Navbar"
 import UsersTable from "@/components/UsersTable"
 
 function users(params) {

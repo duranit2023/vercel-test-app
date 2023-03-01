@@ -1,5 +1,5 @@
 import JobsTable from "@/components/JobsTable"
-import Navbar from "@/components/navbar"
+import Navbar from "@/components/Navbar"
 
 function jobs() {
     return (
