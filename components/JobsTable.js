@@ -4,7 +4,7 @@ function JobsTable(params) {
         <>
         
         <div className="container mt-5 mb-5">
-        <h1>Manege Jobs</h1>
+        <h1>Manage Jobs</h1>
         <div className="card-body">
           <table class="rwd-table">
             <tbody>
