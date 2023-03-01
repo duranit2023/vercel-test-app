@@ -1,3 +1,4 @@
+import Link from "next/link";
 function JobsTable(params) {
     return (
 
@@ -5,6 +6,7 @@ function JobsTable(params) {
         <div className="container mt-5 mb-5">
         <h1>Manage Jobs</h1>
         <div className="card-body">
+        <Link href={'/createJob'}><button className="btn btn-success">Create New Job</button></Link>
           <table class="rwd-table">
             <tbody>
               <tr>
