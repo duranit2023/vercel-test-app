@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-function RolesTable({role}) {
+function RolesTable({roles}) {
     return (
         <>
         <div className="container mt-5 mb-5">
@@ -15,7 +15,8 @@ function RolesTable({role}) {
                         <th>Action</th>
                     </tr>
                     {
-                       
+                        roles && roles.map(role => {
+                        return (
                             <tr key={role}>
                             <td>
                                 {role.id}
@@ -28,8 +29,8 @@ function RolesTable({role}) {
                             </td>
                             </tr>
 
-                    
-                       
+                        )
+                        })
                     }
                 
                     </tbody>
@@ -42,3 +43,14 @@ function RolesTable({role}) {
 
 export default RolesTable;
 
+
+
+export async function getServerSideProps() {
+    const response = await fetch("https://vercel-test-app-rose.vercel.app/api/roles");
+    const roles = await response.json();
+    return {
+      props: {
+        roles: roles
+      }
+    }
+}
