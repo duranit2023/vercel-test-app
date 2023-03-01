@@ -7,7 +7,7 @@ function JobCreate() {
 
                 <div class="form-group col-6 mb-2">
                     <label htmlFor="job_title" class="form-label">Job Title</label>
-                    <input type="text" className="form-control" name="jobtitle"  required />
+                    <input type="text" className="form-control" name="job_title"  required />
                 </div>
                 <div class="form-group col-6 mb-2">
                 <label htmlFor="description" class="form-label">Job Description</label>
@@ -19,7 +19,7 @@ function JobCreate() {
                 </div>
                 <div class="form-group col-6 mb-2">
                 <label htmlFor="job_type" class="form-label">Job Type</label>
-                    <input type="text" className="form-control" name="jobtype"  required />
+                    <input type="text" className="form-control" name="job_type"  required />
                 </div>
                 <div class="form-group col-6 mb-2">
                 <label htmlFor="assigned_to" class="form-label">Job Assigned to</label>
