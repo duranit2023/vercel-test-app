@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 function login() {
     return (
         <>
@@ -11,10 +13,10 @@ function login() {
                     <button>create</button>
                     <p className="message">Already registered? <a>Sign In</a></p>
                     </form>
-                    <form action="/roles" className="login-form" method="post">
+                    <form action="#" className="login-form" method="post">
                     <input type="text" placeholder="username"/>
                     <input type="password" placeholder="password"/>
-                    <button>login</button>
+                    <button><Link href="/roles">Login</Link></button>
                     <p className="message">Not registered? <a>Create an account</a></p>
                     </form>
                 </div>
