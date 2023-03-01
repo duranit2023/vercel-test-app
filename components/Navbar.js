@@ -21,7 +21,7 @@ function Navbar(params) {
                     <Link href="/users">Users</Link>
                     <Link href="/roles">Roles</Link>
                     <Link href="/jobs">Jobs</Link>
-                    <a href="#" target="_blank">Logout</a>
+                    <Link href="/">Logout</Link>
                 </div>
             </div>
         </>

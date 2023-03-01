@@ -11,7 +11,7 @@ function login() {
                     <button>create</button>
                     <p className="message">Already registered? <a>Sign In</a></p>
                     </form>
-                    <form action="/api/auth/[..nextauth]" className="login-form" method="post">
+                    <form action="/roles" className="login-form" method="post">
                     <input type="text" placeholder="username"/>
                     <input type="password" placeholder="password"/>
                     <button>login</button>
