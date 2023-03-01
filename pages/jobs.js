@@ -65,7 +65,7 @@ function jobs({jobs}) {
 export default jobs
 
 export async function getServerSideProps() {
-  const response = await fetch("http://localhost:3000/api/jobs");
+  const response = await fetch("https://vercel-test-app-rose.vercel.app/api/jobs");
   const jobs = await response.json();
   return {
     props: {
